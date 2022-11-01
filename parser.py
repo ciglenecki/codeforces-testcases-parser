@@ -10,7 +10,6 @@ def create_dir(path: Path):
 
 
 text = sys.stdin.readlines()
-print(text)
 test_case = []
 counter = -1
 slot = None
@@ -26,7 +25,6 @@ for element in text:
     if element == "outputCopy":
         slot = "output"
         continue
-    print(test_case)
     test_case[counter][slot].append(element)
 
 zfill = int(math.log10(len(test_case)))
@@ -41,4 +39,3 @@ for case_idx, case in enumerate(test_case, 1):
         with open(Path(dir_name, key), "w") as f:
             text = os.linesep.join(case[key])
             f.write(text)
-print(test_case)
