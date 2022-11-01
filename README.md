@@ -1,5 +1,7 @@
 # codeforces parse and create tests
 
+lazy copy pasting created for non-public contests
+
 copy to clipboard from here to here
 ![](image.jpg)
 
