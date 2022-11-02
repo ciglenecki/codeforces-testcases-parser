@@ -8,19 +8,23 @@ clipboard example:
 ```
 inputCopy
 4
-3 6 2 3
-5
-3 12
-7 9
-4 14
-1 10
-8 7
-outputCopy
+6
 1
-2
-4
-0
-2
+1
+1
+1
+outputCopy
+3 7
+...
+...
+inputCopy
+3
+7
+1
+6
+5
+outputCopy
+7 13
 ```
 
 ## 2. Run create_tests.py
