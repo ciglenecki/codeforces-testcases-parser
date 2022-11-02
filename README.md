@@ -1,11 +1,29 @@
 # codeforces parse and create tests
 
-lazy copy pasting...
+## 1. Copy test cases from here to here:
 
-copy to clipboard from here to here
 ![](image.jpg)
 
-and then run 
+clipboard example:
+```
+inputCopy
+4
+3 6 2 3
+5
+3 12
+7 9
+4 14
+1 10
+8 7
+outputCopy
+1
+2
+4
+0
+2
+```
+
+## 2. Run create_tests.py
 
 ```bash
 python3 create_tests.py <<< $(xclip -o)
@@ -27,7 +45,7 @@ python3 create_tests.py <<< $(xclip -o)
     └── output.txt
 ```
 
-compile main.cpp (`a` file)
+## 3. compile main.cpp -> a file
 ```
 g++ -Wall -Wextra -Wshadow -D_GLIBCXX_ASSERTIONS -ggdb3 -fmax-errors=2 -o a main.cpp
 ```
@@ -50,7 +68,7 @@ g++ -Wall -Wextra -Wshadow -D_GLIBCXX_ASSERTIONS -ggdb3 -fmax-errors=2 -o a main
     └── output.txt
 ```
 
-test all cases with:
+## 4. test all cases
 
 ```bash
 test.sh
